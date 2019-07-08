@@ -1,7 +1,8 @@
 //--------- Variables -----------
 // win, lose, guessCount : count of wins, loses and remaining guesses
-// wintxt, losetxt, guesstxt, urguesses : 
-
+// wintxt, losetxt, guesstxt, urguesses : grab corresponding sections from html to update 
+//                                        texts regarding win lose guess and guess history
+// compick : initial letter generated for first game.
 var win = 0;
 var lose = 0;
 var guessCount = 9;
