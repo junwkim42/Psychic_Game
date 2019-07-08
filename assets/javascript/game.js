@@ -24,7 +24,21 @@ function computerpick(){
 }
 
 // on user keypress
-// 
+// if user key matches computer generated letter
+// -> increment win count and update html
+// -> alet "Good Job!"
+// -> reset guesscount, remaining guess, user guess history and generate new character
+// -> return
+// if user key does not match
+// -> decrement guessCount
+// -> update remaining guess section (Guesses left:)
+// -> append user key to guess history (Your guesses so far)
+// If remaining guess count is < 1  (= 0)
+// -> alert user of computer generated number
+// -> increment lose count and update text on html
+// -> generate new letter for next game
+// -> reset user guess history, remaining guess to 9 and update remaining guess text
+// -> return
 document.onkeypress = function (event){
     var userpick = (event.key).toLowerCase();
     if (userpick == compick){
